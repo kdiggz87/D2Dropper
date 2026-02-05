@@ -1,0 +1,124 @@
+/* Pet of the Day Frontend Styles */
+
+.pet-of-the-day {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.pet-of-the-day.no-pet {
+    text-align: center;
+    padding: 40px;
+}
+
+.pet-of-the-day .pod-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #2271b1;
+}
+
+.pod-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.pod-image {
+    flex: 0 0 300px;
+}
+
+.pod-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.pod-info {
+    flex: 1;
+}
+
+.pod-pet-name {
+    font-size: 28px;
+    color: #2271b1;
+    margin: 0 0 20px 0;
+}
+
+.pod-details {
+    margin-bottom: 20px;
+}
+
+.pod-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.pod-details strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.pod-description {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #2271b1;
+    border-radius: 4px;
+}
+
+.pod-description p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-of-the-day {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .pet-of-the-day .pod-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .pod-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .pod-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    .pod-pet-name {
+        font-size: 22px;
+    }
+}
+
+/* Animation */
+.pet-of-the-day {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
