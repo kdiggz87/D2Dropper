@@ -1,0 +1,166 @@
+/* User Pets Frontend Styles */
+
+.wp-user-pets-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styles */
+.wp-user-pets-form {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.wp-user-pets-form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.wp-user-pets-form .form-group {
+    margin-bottom: 20px;
+}
+
+.wp-user-pets-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.wp-user-pets-form input[type="text"],
+.wp-user-pets-form select,
+.wp-user-pets-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.wp-user-pets-form textarea {
+    resize: vertical;
+}
+
+.wp-user-pets-form .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wp-user-pets-form .pet-image-preview {
+    margin-top: 10px;
+}
+
+.wp-user-pets-form .pet-image-preview img {
+    max-width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    display: block;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Pets List Styles */
+.wp-user-pets-list h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pet-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.pet-card .pet-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pet-card .pet-info {
+    padding: 20px;
+}
+
+.pet-card .pet-info h4 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.pet-card .pet-info p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.pet-card .pet-info strong {
+    color: #333;
+}
+
+.pet-card .pet-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+.pet-card .pet-actions .button {
+    flex: 1;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pets-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .wp-user-pets-form {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,42 @@
+/* User Pets Admin Styles */
+
+.wp-user-pets-stats {
+    background: #fff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 4px solid #2271b1;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.wp-user-pets-stats p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.card ul {
+    margin: 10px 0;
+}
+
+.card li {
+    margin: 8px 0;
+}
+
+.card code {
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-family: monospace;
+}
