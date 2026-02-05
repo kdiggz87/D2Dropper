@@ -199,7 +199,7 @@ class WP_User_Pets_Pet {
             <div class="wp-user-pets-list">
                 <h3><?php _e('My Pets', 'wp-user-pets'); ?></h3>
                 <?php if (empty($pets)) : ?>
-                    <p><?php _e('You haven\'t added any pets yet.', 'wp-user-pets'); ?></p>
+                    <p><?php _e('You haven't added any pets yet.', 'wp-user-pets'); ?></p>
                 <?php else : ?>
                     <div class="pets-grid">
                         <?php foreach ($pets as $pet) : ?>

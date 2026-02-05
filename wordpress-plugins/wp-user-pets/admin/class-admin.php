@@ -150,8 +150,8 @@ class WP_User_Pets_Admin {
                 <h2><?php _e('Shortcodes', 'wp-user-pets'); ?></h2>
                 <p><?php _e('Use these shortcodes to display pet management features:', 'wp-user-pets'); ?></p>
                 <ul>
-                    <li><code>[user_pets]</code> - <?php _e('Display user\'s pets with add/edit/delete form', 'wp-user-pets'); ?></li>
-                    <li><code>[user_pets show_form="no"]</code> - <?php _e('Display only the user\'s pets list', 'wp-user-pets'); ?></li>
+                    <li><code>[user_pets]</code> - <?php _e('Display user's pets with add/edit/delete form', 'wp-user-pets'); ?></li>
+                    <li><code>[user_pets show_form="no"]</code> - <?php _e('Display only the user's pets list', 'wp-user-pets'); ?></li>
                     <li><code>[user_pets_form]</code> - <?php _e('Display only the add pet form', 'wp-user-pets'); ?></li>
                 </ul>
             </div>
